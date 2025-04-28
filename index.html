@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>professional color space converter</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>professional color space converter</h1>
+
+    <div class="container">
+      <div class="input-section">
+        <label for="hexInput">Enter Hex Color (sRGB):</label>
+        <input
+          type="text"
+          id="hexInput"
+          placeholder="#FF5733"
+          value="#3498db"
+        />
+        <button onclick="convertColor()">Convert</button>
+        <div class="info">enter a color in hex format (e.g., #FF5733)</div>
+
+        <div class="color-preview">
+          <div id="colorBox" class="color-box"></div>
+          <div>
+            <h3>color preview</h3>
+            <p>
+              this is how the color appears in sRGB color space on your display.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="results">
+        <h2>color space conversion</h2>
+        <div id="resultGrid" class="result-grid">
+          <!-- Results will be populated here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
